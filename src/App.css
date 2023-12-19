@@ -1,0 +1,337 @@
+body {
+  background-color: #e3f1fe;
+  overflow-x: hidden;
+}
+/* header  */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 3rem;
+  height: 85px;
+}
+.companyName-wrapper {
+  display: flex;
+  gap: 8px;
+}
+.companyName-wrapper button {
+  background-color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.companyName {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  padding: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.companyName img {
+  height: 30px;
+  object-fit: contain;
+}
+.logo-wrapper {
+  width: 300px;
+  height: 100px;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 49% 100%, 0% 100%);
+  box-shadow: rgba(50, 50, 93, 0.35) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.15) 0px -2px 6px 0px inset;
+}
+.headerLogo {
+  height: 100px;
+  object-fit: contain;
+}
+
+/* home  */
+.home {
+  display: flex;
+}
+
+/* aside  */
+.menuBar{
+  position: absolute;
+  left: 10px;
+}
+.asideMain {
+  width: 155px;
+  height: 100vh;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 999;
+}
+.profile {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 10;
+}
+.profile img {
+  height: 50px;
+  object-fit: cover;
+  width: 50px;
+  border-radius: 50%;
+}
+.profile p {
+  font-size: 14px;
+  font-weight: 600;
+}
+.profile span {
+  font-size: 10.5px;
+  font-weight: 500;
+}
+.menuButtons-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: space-between;
+}
+.menuButtons {
+  padding-right: 1rem;
+  margin-top: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.menuButtons button {
+  background-color: white;
+  border: 1px solid rgba(68, 68, 68, 0.303);
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-weight: 600;
+  border-radius: 0px 8px 8px 0px;
+}
+.menuButtons button:hover,
+.menuButtons button.active {
+  background-color: rgb(156, 220, 255);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.logout {
+  display: flex;
+  justify-content: center;
+}
+.logout button {
+  background-color: aliceblue;
+  border: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+  justify-content: center;
+  color: rgb(3, 108, 164);
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+/* hero  */
+.hero {
+  background-color: white;
+  width: 86%;
+  padding: 1rem 4rem;
+}
+.hero h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.planSelector-wrapper {
+  display: flex;
+  justify-content: end;
+}
+.planSelector {
+  border: 1px solid black;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 50px;
+  font-size: 10px;
+  padding: 0.2rem 0.2rem;
+}
+.monthly,
+.annually {
+  padding: 5px 15px;
+  border-radius: 50px;
+}
+.monthly.active {
+  width: 100%;
+  background-color: rgb(156, 220, 255);
+}
+
+/* cards  */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  place-items: center;
+  margin-top: 1rem;
+}
+.cardOne {
+  width: 340px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+.cardOne h2 {
+  font-size: 10px;
+  font-weight: 400;
+  text-decoration: line-through red 1.2px;
+}
+
+.cardOne h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.cardOne button {
+  background-color: rgb(255, 237, 123);
+  border: 0;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  padding: 0.3rem 1rem;
+  border-radius: 6px;
+  gap: 5px;
+  font-weight: 500;
+}
+.cardOne:nth-child(2) {
+  button {
+    background-color: rgb(250, 86, 119);
+  }
+}
+.cardOne:nth-child(3) {
+  button {
+    background-color: rgb(225, 86, 250);
+  }
+}
+.features span {
+  font-size: 10px;
+  margin-top: 1rem;
+}
+.features p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+.features a {
+  display: block;
+  margin-top: .2rem;
+  font-size: 12px;
+  margin-left: 1.6rem;
+  font-weight: 600;
+  color: black;
+}
+ 
+/* card landscape */
+.cards-landscape{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 1rem;
+}
+.card-landscape{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+margin-top: 1rem;
+gap: 1.3rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+padding: 1rem;
+}
+.card-first-col{
+  width: 320px;
+}
+.features {
+  max-width: 250px;
+  word-break: break-all;
+  text-justify: distribute;
+}
+.features p:last-child{
+ font-size: 12px;
+text-align: justify;
+text-justify: auto;
+}
+
+.card-first-col span{
+font-size: 10px;
+background-color: greenyellow;
+padding:0.2rem .5rem ;
+border-radius: 50px;
+}
+.card-first-col p{
+  font-size: 12px;
+}
+.card-first-col button{
+ background-color: greenyellow;
+  border: 0;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  padding: 0.3rem 1rem;
+  border-radius: 6px;
+  gap: 5px;
+  font-weight: 500;}
+  .asideMain-active{
+    position: absolute;
+  }
+  /* sidebar  */
+.notification{
+  background-color: white;
+  padding: 9px;
+  position: absolute;
+  border-radius: 6px;
+  top: 15%;
+  right:0;
+}
+.white-sidebar{
+  position: absolute;
+ bottom: 100px;
+  right: 0;
+  width: 50px;
+  height: 70px;
+  background-color: #fff;
+}
+.add-sidebar{
+  position: absolute;
+  right: 0;
+  color: rgb(255, 45, 255);
+  bottom: 50px;
+}
+
+  /* mobile responsive  */
+  @media screen and (max-width:768px) {
+    .cards,.cards-landscape,.card-landscape{
+      overflow-x: hidden;
+      grid-template-columns: 1fr;
+    }
+    .asideMain{
+      display: none;
+      position: absolute;
+    }
+    
+    .companyName{
+     font-size: 13px;
+    width: 200px;
+    }
+
+  }
+  @media screen and (min-width:768px) {
+body{
+  overflow-y: hidden;
+}
+     .menuBar{
+      display: none;
+    }
+  }
