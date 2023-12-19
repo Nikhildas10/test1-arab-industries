@@ -16,7 +16,7 @@ import { Badge } from "@mui/material";
 const Landing = () => {
   return (
     <div className="hero">
-      <h1>choose a plan that's just right for you !</h1>
+      <h1 style={{fontSize:"27px",margin:"0"}}>Choose a plan that's just right for you !</h1>
       <PlanSelector></PlanSelector>
       {/* CARDS  */}
       <div className="cards">

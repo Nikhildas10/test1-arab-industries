@@ -52,6 +52,7 @@ body {
 
 /* home  */
 .home {
+  overflow: hidden;
   display: flex;
 }
 
@@ -110,7 +111,7 @@ body {
   display: flex;
   align-items: center;
   gap: 3px;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 0px 8px 8px 0px;
 }
 .menuButtons button:hover,
@@ -148,10 +149,12 @@ body {
 .planSelector-wrapper {
   display: flex;
   justify-content: end;
+  margin-top: -25px;
 }
 .planSelector {
   border: 1px solid black;
   width: 200px;
+  font-weight: 700;
   display: flex;
   justify-content: space-around;
   border-radius: 50px;
@@ -256,6 +259,10 @@ padding: 1rem;
   max-width: 250px;
   word-break: break-all;
   text-justify: distribute;
+  overflow: hidden;
+}
+.features p,.features span{
+  font-weight: 600;
 }
 .features p:last-child{
  font-size: 12px;
@@ -271,6 +278,7 @@ border-radius: 50px;
 }
 .card-first-col p{
   font-size: 12px;
+  font-weight: 600;
 }
 .card-first-col button{
  background-color: greenyellow;
@@ -311,27 +319,51 @@ border-radius: 50px;
 }
 
   /* mobile responsive  */
+  
+  /* tablet responsive  */
   @media screen and (max-width:768px) {
     .cards,.cards-landscape,.card-landscape{
       overflow-x: hidden;
       grid-template-columns: 1fr;
+      margin-bottom: 2rem;
     }
     .asideMain{
       display: none;
       position: absolute;
     }
-    
+    .planSelector-wrapper{
+      margin-left: 33rem;
+      margin-top: .5rem;
+      width: 50px;
+    }
+    .companyName{
+      font-size: 13px;
+      width: 200px;
+    }
+  } 
+  @media screen and (max-width:426px) {
+   
+    .cards,.cards-landscape,.card-landscape{
+      overflow-x: hidden;
+      grid-template-columns: 1fr;
+      margin-bottom: 2rem;
+    }
+    .asideMain{
+      display: none;
+      position: absolute;
+    }
+    .planSelector-wrapper{
+     margin-left: 14rem;
+      width: 50px;
+    }
     .companyName{
      font-size: 13px;
     width: 200px;
     }
 
   }
-  @media screen and (min-width:768px) {
-body{
-  overflow-y: hidden;
-}
-     .menuBar{
-      display: none;
+  @media screen and (max-width:1400px) {
+    .features{
+      word-break: normal;
     }
   }
